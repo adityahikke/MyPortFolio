@@ -225,7 +225,7 @@ export default function Hero() {
               <MagneticButton
                 as="a"
                 href={personal.resumeUrl}
-                download="Aditya_Hikke_Resume.pdf"
+                download="ECE2K23194_AdityaHikke_Resume.pdf"
                 className="btn-secondary"
               >
                 <Download size={18} />

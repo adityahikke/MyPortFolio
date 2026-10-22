@@ -8,7 +8,8 @@ import {
   MapPin, 
   Clock, 
   Award, 
-  CheckCircle2 
+  CheckCircle2,
+  Cpu 
 } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData';
 import SectionHeading from './ui/SectionHeading';
@@ -222,7 +223,7 @@ export default function About() {
                 <Zap size={20} color="#818cf8" />,
                 <Sparkles size={20} color="#38bdf8" />,
                 <Award size={20} color="#f59e0b" />,
-                <Layers size={20} color="#34d399" />
+                <Cpu size={20} color="#10b981" />
               ];
 
               return (

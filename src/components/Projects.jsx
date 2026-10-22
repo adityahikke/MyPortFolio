@@ -12,11 +12,16 @@ export default function Projects() {
   const [activeFilter, setActiveFilter] = useState('All');
   const [selectedProject, setSelectedProject] = useState(null);
 
-  const categories = ['All', 'Spring Boot', 'React', 'AI', 'Web Portal'];
+  const categories = ['All', 'Spring Boot', 'React', 'AI / ML', 'Web Portal'];
 
   const filteredProjects = activeFilter === 'All'
     ? projects
-    : projects.filter(p => p.category.toLowerCase().includes(activeFilter.toLowerCase()));
+    : projects.filter(p => {
+        if (activeFilter === 'AI / ML') {
+          return p.category.toLowerCase().includes('ai') || p.category.toLowerCase().includes('ml') || p.category.toLowerCase().includes('machine learning');
+        }
+        return p.category.toLowerCase().includes(activeFilter.toLowerCase());
+      });
 
   return (
     <section id="projects" className="section-padding" style={{ position: 'relative' }}>
@@ -275,28 +280,30 @@ export default function Projects() {
                         <Github size={15} />
                       </MagneticButton>
 
-                      <MagneticButton
-                        as="a"
-                        href={project.demo}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="Live Demo"
-                        style={{
-                          display: 'inline-flex',
-                          alignItems: 'center',
-                          gap: '0.3rem',
-                          padding: '0.35rem 0.75rem',
-                          borderRadius: '8px',
-                          background: 'linear-gradient(135deg, #6366f1, #06b6d4)',
-                          color: '#ffffff',
-                          fontSize: '0.8rem',
-                          fontWeight: 600,
-                          border: 'none'
-                        }}
-                      >
-                        <span>Demo</span>
-                        <ExternalLink size={13} />
-                      </MagneticButton>
+                      {project.demo && (
+                        <MagneticButton
+                          as="a"
+                          href={project.demo}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="Live Demo"
+                          style={{
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: '0.3rem',
+                            padding: '0.35rem 0.75rem',
+                            borderRadius: '8px',
+                            background: 'linear-gradient(135deg, #6366f1, #06b6d4)',
+                            color: '#ffffff',
+                            fontSize: '0.8rem',
+                            fontWeight: 600,
+                            border: 'none'
+                          }}
+                        >
+                          <span>Demo</span>
+                          <ExternalLink size={13} />
+                        </MagneticButton>
+                      )}
                     </div>
                   </div>
                 </TiltCard>

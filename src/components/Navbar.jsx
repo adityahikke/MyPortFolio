@@ -197,7 +197,7 @@ export default function Navbar() {
             <MagneticButton
               as="a"
               href={portfolioData.personal.resumeUrl}
-              download="Aditya_Hikke_Resume.pdf"
+              download="ECE2K23194_AdityaHikke_Resume.pdf"
               className="resume-nav-btn"
               style={{
                 display: 'inline-flex',
@@ -292,7 +292,7 @@ export default function Navbar() {
 
               <a
                 href={portfolioData.personal.resumeUrl}
-                download="Aditya_Hikke_Resume.pdf"
+                download="ECE2K23194_AdityaHikke_Resume.pdf"
                 style={{
                   display: 'flex',
                   alignItems: 'center',

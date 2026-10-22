@@ -49,6 +49,7 @@ export default function Skills() {
       case 'Database': return <Database size={18} />;
       case 'Cloud': return <Cloud size={18} />;
       case 'Wrench': return <Wrench size={18} />;
+      case 'Cpu': return <Cpu size={18} />;
       default: return <Code2 size={18} />;
     }
   };

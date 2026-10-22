@@ -16,16 +16,16 @@ export const portfolioData = {
     typedTitles: [
       "Final Year B.E. @ PICT Pune",
       "Java & Spring Boot Developer",
+      "Machine Learning & Deep Learning Engineer",
       "React.js Full-Stack Developer",
-      "Competitive Programmer (150+ DSA)",
-      "Cloud & REST API Engineer"
+      "Competitive Programmer (200+ DSA)"
     ],
     tagline: "Final year B.E. student in Electronics and Computer Engineering at PICT, Pune.",
-    bioShort: "Strong problem-solving skills with Java as primary language for Data Structures and Algorithms. Skilled in Spring Boot and React for developing scalable and user-focused web applications.",
+    bioShort: "Final-year B.E. student at PICT, Pune and Java Backend Developer building scalable applications around Spring Boot, Machine Learning, and Deep Learning. Strong analytical problem-solving with Java for Data Structures and Algorithms.",
     availability: "Open to Full-Time SDE Roles & Internships",
     location: "Pune, Maharashtra, India",
     yearsExperience: "Final Year Student",
-    resumeUrl: "/resume.pdf",
+    resumeUrl: "/ECE2K23194_AdityaHikke_Resume.pdf.pdf",
     avatarUrl: "/avatar.png",
     phone: "+91 93566 43286",
     socialLinks: {
@@ -40,7 +40,7 @@ export const portfolioData = {
   // 2. HERO FLOATING STAT BADGES
   heroBadges: [
     { label: "Academics @ PICT", value: "8.78 CGPA", icon: "GraduationCap" },
-    { label: "DSA Problems Solved", value: "150+ Solved", icon: "Code2" },
+    { label: "DSA Problems Solved", value: "200+ Solved", icon: "Code2" },
     { label: "Coding Ratings", value: "LeetCode 1500+ | 2★ CodeChef", icon: "Award" }
   ],
 
@@ -48,20 +48,20 @@ export const portfolioData = {
   about: {
     headline: "Final year B.E. student in Electronics and Computer Engineering at PICT, Pune.",
     paragraphs: [
-      "I am a Final year B.E. student in Electronics and Computer Engineering at PICT, Pune, with strong problem-solving skills and Java as my primary language for Data Structures and Algorithms.",
-      "Skilled in Spring Boot and React for developing scalable and user-focused web applications. Passionate about software development, technology, and innovation, with a strong interest in building impactful applications and working effectively in collaborative teams.",
+      "I am a Final-year B.E. student in Electronics and Computer Engineering at PICT, Pune (CGPA 8.78) and Java Backend Developer who builds projects around Spring Boot, Machine Learning, and Deep Learning.",
+      "Experienced in architecting scalable microservices, RESTful APIs, Spring Data JPA, Hibernate, PostgreSQL/MySQL, and modern ML/DL workflows using scikit-learn, XGBoost, and TensorFlow.",
       "Beyond technical development, I am an active member of the PICT Debating Society (DebSoc), engaged in competitive debates and discussions that strengthen my critical thinking, teamwork, and communication skills."
     ],
     stats: [
       { number: 8.78, suffix: " CGPA", label: "PICT Pune Academic Score" },
-      { number: 150, suffix: "+", label: "DSA Problems Solved" },
+      { number: 200, suffix: "+", label: "DSA Problems Solved" },
       { number: 1500, suffix: "+", label: "LeetCode Contest Rating" },
       { number: 2, suffix: " Star", label: "CodeChef Competitive Rating" }
     ],
     highlights: [
       {
         title: "Enterprise Backend with Spring Boot",
-        desc: "Designing resilient RESTful microservices, Spring Data JPA entities, Hibernate ORM, and JWT / Google OAuth 2.0 security pipelines."
+        desc: "Designing resilient RESTful microservices, Spring Data JPA entities, Hibernate ORM, and JWT / Spring Security pipelines."
       },
       {
         title: "Dynamic React Frontends",
@@ -69,11 +69,11 @@ export const portfolioData = {
       },
       {
         title: "Data Structures & Competitive Coding",
-        desc: "150+ problems solved across LeetCode, CodeChef, and GeeksforGeeks with strong analytical problem-solving in Java and C++."
+        desc: "200+ problems solved across LeetCode, CodeChef, and GeeksforGeeks with strong analytical problem-solving in Java and C++."
       },
       {
-        title: "Cloud, IoT & AI Integration",
-        desc: "Experience with AWS IoT Core, MQTT device connectivity, Google Gemini Generative AI API, and Railway cloud deployments."
+        title: "Machine Learning & Deep Learning",
+        desc: "End-to-end ML pipelines & deep neural networks (CNNs) using scikit-learn, XGBoost, TensorFlow, Keras, SHAP, and calibrated probability scoring."
       }
     ]
   },
@@ -162,22 +162,36 @@ export const portfolioData = {
         icon: "Code2",
         skills: [
           { name: "Java (Primary / DSA)", level: 95, icon: "Code2" },
-          { name: "JavaScript (ES6+)", level: 90, icon: "FileCode2" },
-          { name: "Python", level: 85, icon: "Terminal" },
-          { name: "C / C++", level: 45, icon: "Cpu" }
+          { name: "Python", level: 90, icon: "Terminal" },
+          { name: "SQL", level: 90, icon: "Database" },
+          { name: "JavaScript", level: 88, icon: "FileCode2" },
+          { name: "C", level: 75, icon: "Cpu" }
         ]
       },
       {
-        id: "frameworks",
-        name: "Frameworks & Backend",
+        id: "backend",
+        name: "Backend Engineering",
         icon: "Server",
         skills: [
           { name: "Spring Boot", level: 92, icon: "Flame" },
-          { name: "React.js (React 18)", level: 92, icon: "Atom" },
-          { name: "REST APIs", level: 94, icon: "Network" },
+          { name: "Spring MVC & Spring Security", level: 90, icon: "ShieldCheck" },
           { name: "Spring Data JPA & Hibernate", level: 90, icon: "Workflow" },
-          { name: "JWT & OAuth 2.0", level: 88, icon: "ShieldCheck" },
-          { name: "HTML5 & CSS3 / Tailwind", level: 92, icon: "Palette" }
+          { name: "REST APIs", level: 94, icon: "Network" },
+          { name: "React.js (Frontend)", level: 88, icon: "Atom" },
+          { name: "HTML & CSS", level: 90, icon: "Palette" }
+        ]
+      },
+      {
+        id: "mldl",
+        name: "Machine Learning & Deep Learning",
+        icon: "Cpu",
+        skills: [
+          { name: "Machine Learning & scikit-learn", level: 92, icon: "Cpu" },
+          { name: "Deep Learning & Neural Networks (CNN)", level: 88, icon: "Workflow" },
+          { name: "TensorFlow & Keras", level: 86, icon: "Flame" },
+          { name: "XGBoost & Explainable AI (SHAP)", level: 92, icon: "Zap" },
+          { name: "Pandas & NumPy", level: 92, icon: "Layers" },
+          { name: "Matplotlib & EDA", level: 88, icon: "Sliders" }
         ]
       },
       {
@@ -186,21 +200,22 @@ export const portfolioData = {
         icon: "Database",
         skills: [
           { name: "MySQL", level: 92, icon: "Database" },
-          { name: "PostgreSQL", level: 88, icon: "HardDrive" },
-          { name: "MongoDB & MongoDB Atlas", level: 88, icon: "Boxes" },
-          { name: "Database Design & Modeling", level: 90, icon: "Layers" }
+          { name: "PostgreSQL", level: 90, icon: "HardDrive" },
+          { name: "MongoDB", level: 88, icon: "Boxes" },
+          { name: "MongoDB Atlas", level: 88, icon: "UploadCloud" }
         ]
       },
       {
-        id: "tools",
-        name: "Tools & Cloud Platforms",
+        id: "cloud-tools",
+        name: "Cloud, IoT & Developer Tools",
         icon: "Wrench",
         skills: [
+          { name: "AWS IoT Core & MQTT", level: 85, icon: "Cloud" },
+          { name: "IoT Device Management", level: 84, icon: "Sliders" },
+          { name: "Railway, Render & Vercel", level: 88, icon: "UploadCloud" },
           { name: "Git & GitHub", level: 92, icon: "GitBranch" },
-          { name: "Postman", level: 90, icon: "Radio" },
-          { name: "Swagger / OpenAPI", level: 88, icon: "FileText" },
-          { name: "AWS IoT Core & MQTT", level: 84, icon: "Cloud" },
-          { name: "Railway & Vercel", level: 88, icon: "UploadCloud" }
+          { name: "Postman", level: 92, icon: "Radio" },
+          { name: "Swagger / OpenAPI", level: 90, icon: "FileText" }
         ]
       },
       {
@@ -208,42 +223,65 @@ export const portfolioData = {
         name: "Core Computer Science",
         icon: "Layout",
         skills: [
-          { name: "Data Structures & Algorithms", level: 94, icon: "Zap" },
+          { name: "Data Structures & Algorithms", level: 95, icon: "Zap" },
           { name: "Object-Oriented Programming (OOP)", level: 95, icon: "CheckCircle2" },
           { name: "Database Management Systems (DBMS)", level: 92, icon: "Sliders" },
-          { name: "RESTful Web Services", level: 92, icon: "Network" }
+          { name: "RESTful Web Services", level: 94, icon: "Network" }
         ]
       }
     ]
   },
 
-  // 7. FEATURED PROJECTS (3 Resume Projects)
+  // 7. FEATURED PROJECTS
   projects: [
     {
       id: "project-1",
       title: "Placement Prep",
       tagline: "Unified Placement Preparation & Test Engine Platform",
-      description: "A full-stack placement readiness portal engineered to bridge the gap for college students seeking structured, timed practice across Aptitude, CS Fundamentals, and Data Structures & Algorithms in one unified dashboard.",
-      image: "/projects/project1.png",
+      description: "Solved the gap where students have many resources for learning but few platforms for structured practice by building a unified platform that combines Aptitude, CS Fundamentals, and DSA in one place.",
+      image: "/projects/placement-prep.png",
       category: "Fullstack / Spring Boot & React",
       featured: true,
-      technologies: ["React 18", "Spring Boot 3", "MySQL", "JWT", "Google OAuth 2.0", "REST APIs", "Tailwind CSS"],
+      technologies: ["React 18", "Spring Boot 3", "Java 21", "PostgreSQL", "Spring Security", "Supabase", "Render", "Vercel"],
       stats: [
-        { label: "Target Scope", value: "Aptitude + CS + DSA" },
-        { label: "Auth Security", value: "JWT + OAuth 2.0" },
-        { label: "Test Engine", value: "Timed & Auto-Graded" }
+        { label: "DSA Tracker", value: "19 Topics" },
+        { label: "Test Engine", value: "Random 10/20/30" },
+        { label: "Question Bank", value: "300+ Questions" }
       ],
       features: [
-        "Engineered the full-stack architecture utilizing React 18 on frontend and Spring Boot 3 on backend with MySQL persistence.",
-        "Implemented secure JWT stateless authentication and Google OAuth 2.0 with role-based access control (RBAC) for STUDENT and ADMIN users.",
-        "Developed a timed test engine with balanced difficulty selection, countdown timer, instant score calculation, and detailed solution explanations for tests of up to 30 questions.",
-        "Built a comprehensive Admin Portal with Question Bank CRUD operations, CSV/Excel bulk upload and validation, student management, and dynamic curriculum scheduling."
+        "Solved the gap where students have many resources for learning but few platforms for structured practice by building a unified platform that combines Aptitude, CS Fundamentals, and DSA in one place.",
+        "Engineered the full-stack application with a 19-topic DSA tracker; deployed on Vercel (frontend), Render (backend), and Supabase (database).",
+        "Developed a random test generator that creates 10-question balanced tests (4 Easy, 4 Medium, 2 Hard) and custom tests of 10/20/30 questions by section and difficulty, with a 5-minute countdown, auto-submit, and instant results with explanations.",
+        "Created an Admin Portal with question bank CRUD, CSV/Excel bulk upload with row-level validation, and student management, serving a bank of 300+ questions."
       ],
-      github: "https://github.com/adityahikke",
-      demo: "https://aceplacement.up.railway.app/"
+      github: "https://github.com/adityahikke/Placement-Prep-Platform",
+      demo: "https://apticode-rho.vercel.app/"
     },
     {
       id: "project-2",
+      title: "Credit Risk Assessment with Explainable AI (SHAP)",
+      tagline: "End-to-End ML Pipeline, Platt Calibration & SHAP Interpretability",
+      description: "Built an end-to-end machine learning pipeline on 32,581 loan records for default prediction with EDA, outlier removal, median imputation, ColumnTransformer one-hot encoding, and class-imbalance handling (21.8% defaults) via scale_pos_weight.",
+      image: "/projects/credit-risk.png",
+      category: "AI & Machine Learning / Python",
+      featured: true,
+      technologies: ["Python", "XGBoost", "Scikit-Learn", "SHAP", "Pandas", "NumPy", "FastAPI", "Render"],
+      stats: [
+        { label: "Model Metric", value: "ROC-AUC 0.94+" },
+        { label: "Dataset Size", value: "32,581 Records" },
+        { label: "Optimal Threshold", value: "0.285 Cutoff" }
+      ],
+      features: [
+        "Built an end-to-end machine learning pipeline on 32,581 loan records for default prediction, with EDA, outlier removal, median imputation, one-hot encoding via ColumnTransformer, and class-imbalance handling (21.8% defaults) using scale_pos_weight.",
+        "Benchmarked Logistic Regression, Random Forest, and XGBoost with 5-fold stratified cross-validation, tuned with RandomizedSearchCV, and reached ROC-AUC 0.94+; optimized the decision threshold to 0.285 (F1/PR-curve) and applied Platt calibration validated with Brier score.",
+        "Applied Explainable AI (SHAP TreeExplainer) for global and per-applicant explanations, finding loan-to-income ratio and interest rate as the top default drivers, and analyzed 258 false positives and 256 false negatives.",
+        "Deployed the model as a FastAPI REST API with Pydantic validation and Swagger docs, plus an interactive web dashboard, hosted on Render."
+      ],
+      github: "https://github.com/adityahikke/Credit-Risk-Assesment-Using-SHAP",
+      demo: "https://credit-risk-assesment-using-shap-7us1.onrender.com/"
+    },
+    {
+      id: "project-3",
       title: "Culinary AI — AI Recipe Assistant",
       tagline: "Personalized Intelligent Recipe Generation Powered by Google Gemini",
       description: "A full-stack intelligent recipe recommendation application leveraging Java Spring Boot backend and Google Gemini Generative AI for customized ingredient analysis, cooking instructions, and image-based ingredient detection.",
@@ -266,7 +304,7 @@ export const portfolioData = {
       demo: "https://recipe-assistant-production.up.railway.app/"
     },
     {
-      id: "project-3",
+      id: "project-4",
       title: "ECE Department Website",
       tagline: "Official Academic Resources & Department Portal for PICT",
       description: "A modern, responsive department web portal delivering centralized academic resources, official announcements, event calendars, and faculty directories for students and staff.",
@@ -286,7 +324,7 @@ export const portfolioData = {
         "Implemented clean UI layout with search filtering, mobile responsiveness, and dark/light contrast."
       ],
       github: "https://github.com/adityahikke",
-      demo: "https://pict-ece-portal.vercel.app"
+      demo: ""
     }
   ],
 
@@ -294,7 +332,7 @@ export const portfolioData = {
   achievements: [
     {
       title: "LeetCode & CodeChef Competitive Programming",
-      desc: "Achieved a 2-Star rating on CodeChef and a 1500+ contest rating on LeetCode with 150+ DSA problems solved across platforms."
+      desc: "Achieved a 2-Star rating on CodeChef and a 1500+ contest rating on LeetCode with 200+ DSA problems solved across platforms."
     },
     {
       title: "PICT Debating Society (DebSoc)",

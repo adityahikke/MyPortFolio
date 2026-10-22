@@ -222,16 +222,18 @@ export default function ProjectModal({ project, isOpen, onClose }) {
                 borderTop: '1px solid var(--border-subtle)'
               }}
             >
-              <MagneticButton
-                as="a"
-                href={project.demo}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary"
-              >
-                <span>Launch Live Demo</span>
-                <ExternalLink size={16} />
-              </MagneticButton>
+              {project.demo && (
+                <MagneticButton
+                  as="a"
+                  href={project.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary"
+                >
+                  <span>Launch Live Demo</span>
+                  <ExternalLink size={16} />
+                </MagneticButton>
+              )}
 
               <MagneticButton
                 as="a"

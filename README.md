@@ -18,7 +18,7 @@
 
 ## 👨‍💻 About Me
 
-I am a **Final Year B.E. student in Electronics and Computer Engineering at Pune Institute of Computer Technology (PICT), Pune** (*CGPA: 8.78/10.0*), with strong problem-solving skills and Java as my primary language for Data Structures and Algorithms (*150+ DSA problems solved*). 
+I am a **Final Year B.E. student in Electronics and Computer Engineering at Pune Institute of Computer Technology (PICT), Pune** (*CGPA: 8.78/10.0*), with strong problem-solving skills and Java as my primary language for Data Structures and Algorithms (*200+ DSA problems solved*). 
 
 Skilled in **Spring Boot** and **React** for developing scalable, user-focused web applications. Passionate about software engineering, cloud systems, and collaborative problem-solving.
 
