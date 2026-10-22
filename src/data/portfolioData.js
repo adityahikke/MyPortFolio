@@ -255,7 +255,7 @@ export const portfolioData = {
         "Created an Admin Portal with question bank CRUD, CSV/Excel bulk upload with row-level validation, and student management, serving a bank of 300+ questions."
       ],
       github: "https://github.com/adityahikke/Placement-Prep-Platform",
-      demo: "https://apticode-rho.vercel.app/"
+      demo: "https://apticode-rho.vercel.app/login"
     },
     {
       id: "project-2",

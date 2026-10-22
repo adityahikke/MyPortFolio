@@ -160,8 +160,10 @@ export default function StickyProjectsSidebar() {
                   >
                     <div style={{ display: 'flex', gap: '0.65rem', alignItems: 'center', marginBottom: '0.5rem' }}>
                       {/* Thumbnail */}
-                      <div
-                        onClick={() => setSelectedProject(proj)}
+                      <a
+                        href={proj.demo || proj.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         style={{
                           width: '46px',
                           height: '46px',
@@ -169,20 +171,24 @@ export default function StickyProjectsSidebar() {
                           overflow: 'hidden',
                           flexShrink: 0,
                           cursor: 'pointer',
-                          border: '1px solid rgba(255, 255, 255, 0.1)'
+                          border: '1px solid rgba(255, 255, 255, 0.1)',
+                          display: 'block'
                         }}
+                        title={`Open ${proj.title} Live`}
                       >
                         <img
                           src={proj.image}
                           alt={proj.title}
                           style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                         />
-                      </div>
+                      </a>
 
                       {/* Info */}
                       <div style={{ flex: 1, minWidth: 0 }}>
-                        <div
-                          onClick={() => setSelectedProject(proj)}
+                        <a
+                          href={proj.demo || proj.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
                           style={{
                             fontSize: '0.825rem',
                             fontWeight: 700,
@@ -190,12 +196,16 @@ export default function StickyProjectsSidebar() {
                             whiteSpace: 'nowrap',
                             overflow: 'hidden',
                             textOverflow: 'ellipsis',
-                            cursor: 'pointer'
+                            cursor: 'pointer',
+                            display: 'block',
+                            textDecoration: 'none'
                           }}
-                          title={proj.title}
+                          onMouseEnter={(e) => e.currentTarget.style.color = 'var(--accent-cyan)'}
+                          onMouseLeave={(e) => e.currentTarget.style.color = '#ffffff'}
+                          title={`Launch ${proj.title}`}
                         >
                           {proj.title}
-                        </div>
+                        </a>
                         <div
                           style={{
                             fontSize: '0.7rem',
